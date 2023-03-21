@@ -108,8 +108,8 @@ textarea {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	-moz-column-gap: 212px;
-	column-gap: 212px;
+	-moz-column-gap: 204px;
+	column-gap: 204px;
 }
 .header__nav-link {
 	font-weight: 400;
