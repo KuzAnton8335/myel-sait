@@ -1,32 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
-    <link rel="stylesheet" href="css/base.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>FIGMA | Макеты для верстки — Верстка страницы</title>
+		<meta
+			name="description"
+			content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки"
+		/>
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" href="./css/normalaiz.css" />
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./css/itc-slider.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<!-- Начало: Данный блок удалять нельзя -->
+		<div class="maketforfigma">
+			<a href="https://t.me/s/FigmaToHTML" target="_blank">
+				<img src="img/logo.png" />
+			</a>
+			<div>
+				<p>
+					Данная верстка, была реализована пользователем в рамках обучающего
+					телеграм канал
+					<a href="https://t.me/s/FigmaToHTML" target="_blank"
+						>FIGMA | Макеты для верстки</a
+					>
+				</p>
+				<p>
+					При помощи
+					<a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank"
+						>Telegram-бота</a
+					>
+					пользователь получил оплату за верстку этого макета.
+				</p>
+			</div>
+		</div>
+		<!-- Конец -->
 
-    <!-- Начало: Данный блок удалять нельзя -->
-    <div class="maketforfigma">
-        <a href="https://t.me/s/FigmaToHTML" target="_blank">
-            <img src="img/logo.png">
-        </a>
-        <div>
-            <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
-            </p>
-            <p>
-                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
-            </p>
-        </div>
-    </div>
-    <!-- Конец -->
+		<div class="main">
+			<div class="background-main">
+				<header class="header">
+					<div class="container">
+						<div class="header__top">
+							<span class="header__top-text"
+								>Free shipping on orders over $150 over Canada</span
+							>
+						</div>
+						<div class="header__bottom">
+							<nav class="header__nav">
+								<ul class="header__nav-list list-reset">
+									<li class="header__nav-item">
+										<a href="#" class="header__nav-link">Shop by</a>
+									</li>
+									<li class="header__nav-item">
+										<a href="#" class="header__nav-link">Collections</a>
+									</li>
+									<li class="header__nav-item">
+										<a href="#" class="header__nav-link--logo"
+											><img src="img/icons/logo.svg" alt="myel"
+										/></a>
+									</li>
+									<li class="header__nav-item">
+										<a href="#" class="header__nav-link">About us</a>
+									</li>
+									<li class="header__nav-item">
+										<a href="#" class="header__nav-link">Login</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="header__lang">
+								<button class="header__lang-btn-fr btn-reset">fr</button>
+								<div class="header__lang-line"></div>
+								<button class="header__lang-btn-en btn-reset">en</button>
+							</div>
+							<div class="header__number">
+								<span>0</span>
+							</div>
+						</div>
+					</div>
+				</header>
+				<main class="page__main">
+					<section class="hero">
+						<div class="container">
+							<div class="hero__list">
+								<div
+									class="hero__item"
+									style="background-image: url(./img/hero-img-1.jpg)"
+								>
+									<p class="hero__item-descr">A modern signet ring</p>
+								</div>
+								<div
+									class="hero__item"
+									style="background-image: url(./img/hero-img-2.jpg)"
+								></div>
+								<div
+									class="hero__item"
+									style="background-image: url(./img/hero-img-3.jpg)"
+								>
+									<a href="#" class="hero__item-link">Shop All</a>
+									<p class="hero__item-descr">Stack the necklaces</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="about">
+						<div class="container about__container">
+							<div class="about__descr">
+								<h1 class="about__descr-title">
+									Responsible high-end jewelry made in Montreal. MYEL creations
+									are designed to stand the test of time.
+								</h1>
+								<p class="about__descr-text">
+									Spontaneous, delicate, audacious, our jewels distinguish
+									themselves with their elegance.
+								</p>
+								<a href="#" class="about__descr-link">Shop MYEL</a>
+							</div>
+						</div>
+					</section>
+					<section class="firstslider">
+						<div class="container firstslider__container">
+							<!-- slider -->
+							<div class="swiper firstslider__swiper">
+								<h2 class="firstslider__title">Shop New Arrivals</h2>
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<div class="firstslider__block">
+											<h3 class="firstslider__subtitle">
+												Stein Necklace in Silver with Aquamarine
+											</h3>
+											<div class="firstslider__block-img">
+												<img
+													src="img/firstslider-img-1.png"
+													alt="Stein Necklace "
+												/>
+											</div>
+											<div class="firstslider__cent-block">
+												<span class="firstslider__cent">$310 CAD</span>
+												<a href="#" class="firstslider__link">Shop now</a>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="firstslider__block">
+											<div class="firstslider__block-img">
+												<img src="img/firstslider-img-2.png" alt="" />
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="firstslider__block">
+											<h3 class="firstslider__subtitle">
+												Origines Pendant in Yellow Gold with Ethical Birthstone
+											</h3>
+											<div class="firstslider__block-img">
+												<img
+													src="img/firstslider-img-3.png"
+													alt="Stein Necklace "
+												/>
+											</div>
+											<span class="firstslider__cent">$280 CAD</span>
+											<a href="#" class="firstslider__link">Shop now</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="firstslider__block">
+											<h3 class="firstslider__subtitle">
+												Stein Necklace in Silver with Aquamarine
+											</h3>
+											<div class="firstslider__block-img">
+												<img
+													src="img/firstslider-img-1.png"
+													alt="Stein Necklace "
+												/>
+											</div>
+											<div class="firstslider__cent-block">
+												<span class="firstslider__cent">$310 CAD</span>
+												<a href="#" class="firstslider__link">Shop now</a>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="firstslider__block">
+											<div class="firstslider__block-img">
+												<img src="img/firstslider-img-2.png" alt="" />
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="firstslider__block">
+											<h3 class="firstslider__subtitle">
+												Origines Pendant in Yellow Gold with Ethical Birthstone
+											</h3>
+											<div class="firstslider__block-img">
+												<img
+													src="img/firstslider-img-3.png"
+													alt="Stein Necklace "
+												/>
+											</div>
+											<span class="firstslider__cent">$280 CAD</span>
+											<a href="#" class="firstslider__link">Shop now</a>
+										</div>
+									</div>
+								</div>
+								<!-- If we need pagination
+						<div class="swiper-pagination"></div> -->
 
-    <div class="main">
-        В данном блоке размещается верстка
-    </div>
+								<!-- If we need navigation buttons -->
+								<div class="firstslide__btn">
+									<div class="swiper-button-prev firstslide__btn-prev"></div>
+									<div class="swiper-button-next firstslide__btn-next"></div>
+								</div>
 
-</body>
+								<!-- If we need scrollbar
+                <div class="swiper-scrollbar"></div> -->
+							</div>
+							<!-- /slider -->
+						</div>
+					</section>
+					<section class="bonne">
+						<div class="container">
+							<div class="bonne__block">
+								<div class="bonne__image"></div>
+								<div class="bonne__cart">
+									<h3 class="bonne__cart-title">Bonne Mine t-shirt</h3>
+									<p class="bonne__cart-descr">
+										Support the fundraising campaign
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="categories">
+						<div class="container categories__container">
+							<!-- slider -->
+							<h2 class="categories__title">Browse by categories</h2>
+							<div
+								class="itc-slider"
+								data-autoplay="true"
+								data-interval="7000"
+								data-loop="true"
+								data-slider="itc-slider"
+							>
+								<div class="itc-slider__wrapper">
+									<div class="itc-slider__items">
+										<div class="itc-slider__item">
+											<div class="categories__item">
+												<div class="categories__block categories__block-1">
+													<p class="categories__text">Rings</p>
+												</div>
+												<div
+													class="categories__block categories__block-2"
+												></div>
+												<div class="categories__block categories__block-1">
+													<p class="categories__text">Earrings</p>
+												</div>
+											</div>
+										</div>
+										<div class="itc-slider__item">
+											<div class="categories__item">
+												<div class="categories__block categories__block-1">
+													<p class="categories__text">Rings</p>
+												</div>
+												<div
+													class="categories__block categories__block-2"
+												></div>
+												<div class="categories__block categories__block-1">
+													<p class="categories__text">Earrings</p>
+												</div>
+											</div>
+										</div>
+										<div class="itc-slider__item">
+											<div class="categories__item">
+												<div class="categories__block categories__block-1">
+													<p class="categories__text">Rings</p>
+												</div>
+												<div
+													class="categories__block categories__block-2"
+												></div>
+												<div class="categories__block categories__block-1">
+													<p class="categories__text">Earrings</p>
+												</div>
+											</div>
+										</div>
+										<div class="itc-slider__item">
+											<div class="categories__item">
+												<div class="categories__block categories__block-1">
+													<p class="categories__text">Rings</p>
+												</div>
+												<div
+													class="categories__block categories__block-2"
+												></div>
+												<div class="categories__block categories__block-1">
+													<p class="categories__text">Earrings</p>
+												</div>
+											</div>
+										</div>
+										<div class="itc-slider__item">
+											<div class="categories__item">
+												<div class="categories__block categories__block-1">
+													<p class="categories__text">Rings</p>
+												</div>
+												<div
+													class="categories__block categories__block-2"
+												></div>
+												<div class="categories__block categories__block-1">
+													<p class="categories__text">Earrings</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button class="itc-slider__btn itc-slider__btn_prev"></button>
+								<button class="itc-slider__btn itc-slider__btn_next"></button>
+								<div class="categories__indicator">
+									<ol class="itc-slider__indicators">
+										<li class="itc-slider__indicator" data-slide-to="0"></li>
+										<li class="itc-slider__indicator" data-slide-to="1"></li>
+										<li class="itc-slider__indicator" data-slide-to="2"></li>
+										<li class="itc-slider__indicator" data-slide-to="3"></li>
+										<li class="itc-slider__indicator" data-slide-to="4"></li>
+									</ol>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="books">
+						<div class="container books__container">
+							<div class="books__list">
+								<div class="books__item">
+									<span class="books__item-text">One-of-a-kind books</span>
+									<div class="books__item-img books__item-img1"></div>
+								</div>
+								<div class="books__item">
+									<div class="books__item-img books__item-img2"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="pictures">
+						<div class="container">
+							<div class="pictures__block">
+								<h3 class="pictures__title">
+									Together, we can build a brighter tomorrow. We use ethical
+									stones and the most eco-responsible raw material possible.
+								</h3>
+								<div class="pictures__list">
+									<div class="pictures__item">
+										<picture>
+											<img
+												src="img/icons/pictures__icon-1.svg"
+												alt="hands"
+												class="pictures__item-img"
+											/>
+										</picture>
+										<span class="picture__number">01</span>
+										<p class="picture__text">
+											Our jewelry is designed and produced locally in Montreal.
+										</p>
+									</div>
+									<div class="pictures__item">
+										<picture>
+											<img
+												src="img/icons/pictures__icon-2.svg"
+												alt="hands"
+												class="pictures__item-img"
+											/>
+										</picture>
+										<span class="picture__number">02</span>
+										<p class="picture__text">
+											MYEL is a member of the Ethical Metalsmith Association.
+										</p>
+									</div>
+									<div class="pictures__item">
+										<picture>
+											<img
+												src="img/icons/pictures__icon-3.svg"
+												alt="hands"
+												class="pictures__item-img"
+											/>
+										</picture>
+										<span class="picture__number">03</span>
+										<p class="picture__text">
+											We create high end jewelry,<br />
+											designed to stand the test of time.
+										</p>
+									</div>
+								</div>
+								<button class="btn-reset picture__btn">Learn More</button>
+							</div>
+						</div>
+					</section>
+					<section class="counts">
+						<div class="container">
+							<div class="counts__list">
+								<div class="counts__item">
+									<div class="counts__item-img counts__item-img-1">
+										<p class="counts__item-hesh">#Everygramcounts</p>
+									</div>
+								</div>
+								<div class="counts__item">
+									<div class="counts__item-img counts__item-img-2">
+										<h3 class="counts__item-title">
+											Fairmined Gold: choose ethical gold
+										</h3>
+										<p class="counts__item-descr">Shop Fairmined Gold</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="subscribe">
+						<div class="container">
+							<div class="subscribe__wrapper">
+								<ul class="subscribe__list list-reset">
+									<li class="subscribe__item">
+										<a href="#" class="subscribe__link">Exceptional Quality</a>
+									</li>
+									<li class="subscribe__item">
+										<a href="#" class="subscribe__link">Fair Price</a>
+									</li>
+									<li class="subscribe__item">
+										<a href="#" class="subscribe__link">Made in Montreal</a>
+									</li>
+								</ul>
+								<h3 class="subscribe__title">Subscribe to our newsletter.</h3>
+								<p class="subscribe__descr">
+									Receive exclusive news and special promo codes.
+								</p>
+								<form action="Get" class="subscribe__form">
+									<input type="text" class="subscribe__form-input" />
+									<button class="btn-reset subscribe__btn">
+										<img
+											src="img/icons/subscribe-icon.svg"
+											alt="icon subscribe"
+										/>
+									</button>
+								</form>
+							</div>
+						</div>
+					</section>
+				</main>
+				<footer class="footer">
+					<div class="container">
+						<div class="footer__wrapper">
+							<div class="footer__shop">
+								<h4 class="footer__shop-title">Shop By</h4>
+								<ul class="footer__shop-list list-reset">
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link">Necklaces</a>
+									</li>
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link">Earrings</a>
+									</li>
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link">Best Sellers</a>
+									</li>
+								</ul>
+								<div class="footer__shop-social">
+									<h4 class="footer__shop-social--title">Social</h4>
+									<div class="footer__shop-social--links">
+										<a
+											href="#"
+											class="footer__shop-social--link footer__shop-social--link-f"
+										></a>
+										<a
+											href="#"
+											class="footer__shop-social--link footer__shop-social--link-ins"
+										></a>
+									</div>
+								</div>
+							</div>
+							<div class="footer__rings">
+								<ul class="footer__shop-list footer__rings-list list-reset">
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link">Rings</a>
+									</li>
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link">Bracelets</a>
+									</li>
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link">New Arrivals</a>
+									</li>
+								</ul>
+								<div class="header__lang footer__rings-lang">
+									<button class="header__lang-btn-fr btn-reset">fr</button>
+									<div class="header__lang-line"></div>
+									<button class="header__lang-btn-en btn-reset">en</button>
+								</div>
+							</div>
+							<div class="footer__support">
+								<h4 class="footer__shop-title">Support</h4>
+								<ul class="footer__shop-list list-reset">
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link">Product care</a>
+									</li>
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link"
+											>Returns, shipping & pricing</a
+										>
+									</li>
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link">FAQ</a>
+									</li>
+								</ul>
+								<div class="footer__copy">
+									<span>All rights reserved. © 2021 - MYEL</span>
+								</div>
+							</div>
+							<div class="footer__mayl">
+								<h4 class="footer__shop-title">MYEL</h4>
+								<ul class="footer__shop-list list-reset">
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link">About</a>
+									</li>
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link">Journal</a>
+									</li>
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link">Ethical stones</a>
+									</li>
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link">Terms & privacy</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__visit">
+								<h4 class="footer__shop-title">Visit</h4>
+								<ul class="footer__shop-list list-reset">
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link">The Store</a>
+									</li>
+									<li class="footer__shop-item">
+										<a href="#" class="footer__shop-link">Contact</a>
+									</li>
+								</ul>
+								<div class="footer__copy footer__copy-credits">
+									<span>Web Credits</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
+
+	<script src="js/libs/swiper-bundle.min.js"></script>
+	<script src="js/libs/itc-slider.js"></script>
+	<script src="js/script.js"></script>
 </html>
